@@ -1,0 +1,59 @@
+﻿[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.forms label.error.valid {
+    border: none;
+}
+
+.forms label.error{
+    border:none;
+    color: red;
+    font: bold 14px arial,verdana;
+    width: 100%
+}
+
+.csstransitions main [class*="col-"] {
+    opacity: 100;
+}
+
+@media (max-width:768px) {
+    .navbar-brand img {
+        height: 100%;
+        width: auto;
+    }
+    div.navbar-minimize-mobile.left i{
+    color: #546ba4;
+    }
+}
+
+
+
+ .loader {
+            display:    none;
+            position:   fixed;
+            z-index:    1000;
+            top:        0;
+            left:       0;
+            height:     100%;
+            width:      100%;
+            background: rgba( 255, 255, 255, .8 ) 
+                        url('http://i.stack.imgur.com/FhHRx.gif') 
+                        50% 50% 
+                        no-repeat;
+        }
+
+         /*When the body has the loading class, we turn
+           the scrollbar off with overflow:hidden*/ 
+        body.loading {
+            overflow: hidden;   
+        }
+
+         /*Anytime the body has the loading class, our
+           modal element will be visible*/ 
+        body.loading .loader {
+            display: block;
+        }
+
+        input, textarea, .uneditable-input, .form-inline .form-control, .navbar-form .form-control {
+     width: auto;
+}
